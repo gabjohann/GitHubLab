@@ -36,3 +36,4 @@ Instalação das bibliotecas utilizadas:
 
 **Aula 05 - Webpack Dev Server**
 - Instalação do Webpack dev server: `yarn add webpack-dev-server -D`
+<br/>
