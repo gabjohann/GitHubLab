@@ -34,6 +34,15 @@ Instalação das bibliotecas utilizadas:
 - Instalação do plugin HTML do Webpack: `yarn add html-webpack-plugin -D`
 <br />
 
-**Aula 05 - Webpack Dev Server**
+**Aula 06 - Webpack Dev Server**
 - Instalação do Webpack dev server: `yarn add webpack-dev-server -D`
 <br/>
+
+
+**Aula 08 - Ambiente dev e produção**
+
+Configuração do webpack para desenvolvimento vs produção:
+- Criação da variável de ambiente para sistemas Unix: `NODE_ENV=production yarn build`
+
+Criação de variáveis ambiente independente do SO:
+- Instalação do Cross-env: `yarn add cross-env -D`
