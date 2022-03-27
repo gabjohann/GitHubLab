@@ -30,5 +30,9 @@ Instalação das bibliotecas utilizadas:
 - Instalação do Babel loader: `yarn add babel-loader -D`
 <br/>
 
-**Aula 04 - Estrutura do ReactJS**
+**Aula 05 - Servindo HTML estático**
 - Instalação do plugin HTML do Webpack: `yarn add html-webpack-plugin -D`
+<br />
+
+**Aula 05 - Webpack Dev Server**
+- Instalação do Webpack dev server: `yarn add webpack-dev-server -D`
