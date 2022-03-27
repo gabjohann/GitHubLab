@@ -28,3 +28,6 @@ Instalação das bibliotecas utilizadas:
 **Aula 03 - Configurando Webpack**
 `yarn add webpack webpack-cli -D`
 `yarn add babel-loader -D`
+<br/>
+
+**Aula 04 - Estrutura do ReactJS**
