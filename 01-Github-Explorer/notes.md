@@ -12,6 +12,14 @@ Instalação das bibliotecas utilizadas:
 
 - Instalação do React Dom: `yarn add react-dom`
 
-Árvore dde diretórios
-src - todo código da aplicação 
-public - arquivos públicos
+Árvore dde diretórios:
+  - src - todo código da aplicação 
+  - public - arquivos públicos
+<br/>
+
+**Aula 02 - Configurando Babel**
+
+Instalação das bibliotecas utilizadas:
+****
+- Instalação do Babel: `yarn add @babel/core @babel/cli @babel/preset-env -D`
+- Instalação do preset React para Babel: `yarn add @babel/preset-react -D`
