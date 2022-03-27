@@ -5,7 +5,6 @@ export function Counter() {
 
   function increment() {
    setCounter(counter + 1);
-
   }
 
   return (
