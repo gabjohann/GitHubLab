@@ -48,3 +48,7 @@ Criação de variáveis ambiente independente do SO:
 
 - Instalação do loader de estilização: `yarn add style-loader css-loader -D`
 <br/>
+
+**Aula 09 - Utilizando SASS**
+
+Instalação do loader de SASS: `yarn add node-sass -D` && `yarn add sass-loader -D`
