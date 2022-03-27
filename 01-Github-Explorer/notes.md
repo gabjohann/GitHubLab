@@ -38,7 +38,6 @@ Instalação das bibliotecas utilizadas:
 - Instalação do Webpack dev server: `yarn add webpack-dev-server -D`
 <br/>
 
-
 **Aula 08 - Ambiente dev e produção**
 
 Configuração do webpack para desenvolvimento vs produção:
@@ -46,3 +45,6 @@ Configuração do webpack para desenvolvimento vs produção:
 
 Criação de variáveis ambiente independente do SO:
 - Instalação do Cross-env: `yarn add cross-env -D`
+
+- Instalação do loader de estilização: `yarn add style-loader css-loader -D`
+<br/>
