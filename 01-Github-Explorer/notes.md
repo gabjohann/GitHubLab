@@ -51,4 +51,9 @@ Criação de variáveis ambiente independente do SO:
 
 **Aula 09 - Utilizando SASS**
 
-Instalação do loader de SASS: `yarn add node-sass -D` && `yarn add sass-loader -D`
+- Instalação do loader de SASS: `yarn add node-sass -D` && `yarn add sass-loader -D`
+<br />
+
+**Aula 10 - Fast Refresh no Webpack**
+
+- Instalação do plugin de fast refresh: `yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh`
