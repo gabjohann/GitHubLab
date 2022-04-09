@@ -57,3 +57,12 @@ Criação de variáveis ambiente independente do SO:
 **Aula 10 - Fast Refresh no Webpack**
 
 - Instalação do plugin de fast refresh: `yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh`
+
+
+**Aula 15 - TypeScript no ReactJS**
+
+- Instalação do typescript `yarn add typescript -D`
+- Inicialização do typescript `yarn tsc --init` || `yarn typescript --init`
+- Configuração do Babel para TypeScript `yarn add @babel/preset-typescript -D`
+- Configuração da DOM `yarn add @types/react-dom -D`
+- Configuração do React `yarn add @types/react`
