@@ -9,7 +9,7 @@
 
 ## Conteúdos do curso
 
-- [ ] Variáveis e tipos de dados
+- [X] Variáveis e tipos de dados
 - [ ] Listas
 - [ ] Objetos
 - [ ] JSON

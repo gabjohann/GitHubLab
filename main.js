@@ -1,61 +1,45 @@
-/* TIPOS DE DADOS */
+// const names = ['Lucas', 'Gabriel', 'Anakin'];
+const names = ['Lucas', 'Gabriel', 'Anakin', 10];
 
-//Strings
+// acessar elementos da lista
+const gabriel = names[1]; 
+console.log(gabriel);
 
-// declaração das constantes
-const message = 'Hello World';
+// adicionar elementos ao final da lista
+names.push('Baelfire'); 
+console.log(names);
 
-console.log(message.length);
+// adicionar elementos ao inicio da lista
+names.unshift(20); 
+console.log(names);
 
-const firstName = 'Lucas Gabriel';
-const lastName = 'Fernandes Johann';
+// remove o primeiro elemento da lista
+names.shift(20); 
+console.log(names);
 
-const names = 'Lucas,Gabriel,Anakin';
+// remove o último elemento adicionado a lista
+names.pop(); 
+console.log(names);
 
-// concatenação 
-console.log('Meu nome é ' + firstName + ' ' + lastName);
+// alterar o valor de um elemento
+names[3] = 'Baelfire'; 
+console.log(names);
 
-console.log(`Meu nome é ${firstName} ${lastName}`); //t
+// verifica o índice de um elemento
+console.log(names.indexOf('Gabriel')); 
 
-// maiúsculo e minúsculo
-console.log(`${firstName.toUpperCase()} ${lastName.toLowerCase()}`);
+// ordena em ordem alfabética
+const sortedNames = names.sort();
+console.log(sortedNames);
 
-// split 
-console.log(names.split(",")); //por palavras
-console.log(names.split(""));  //por letras
+//console.log(names.sort()); 
 
-
-// Números
-
-const number = 5;
-
-console.log(number + 10); //soma 
-console.log(number - 10); // subtração
-console.log(number * 2);  // multiplicação
-console.log(number / 2);  //divisão
-
-console.log(number.toString()); // conversão para string
-
-// verificação do tipo de dado
-console.log(typeof number.toString()); 
-console.log(typeof number); 
+// verifica a quantidade de elementos
+console.log(names.length);
 
 
-// Booleanos
+// verifica se uma variável é uma lista 
+const nameISArray = Array.isArray(names);
+console.log(nameISArray);
 
-console.log(2 == 3); // false
-console.log(2 == 2); // true
-
-
-// Mulo e Indefinido 
-
-const x = null; 
-
-const y = undefined; 
-
-
-// Listas
-
-const list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-const object = {name: 'Lucas Gabriel'};
+//console.log(Array.isArray(names)); 
