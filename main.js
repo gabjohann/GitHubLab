@@ -1,32 +1,69 @@
-// Manipulação de listas
-
-const numbers = [1, 2, 3, 4, 5];
-
-// map
-const numberMultipliedByTwo = numbers.map(
-  function (number) {
-    return number * 2;
+// Listas com Objetos
+const person = {
+  firstName: 'Lucas Gabriel',
+  lastName: 'Fernandes Johann',
+  age: 19,
+  hobbies: ['ler', 'estudar', 'assistir séries'],
+  dogF:  {
+    name: 'Ariel',
+    age: 1
+  }, 
+  dogM: {
+    name: 'Tobe',
+    age: 14
   }
-);
+};
 
-console.log(numberMultipliedByTwo);
+const firstName = person.firstName;
+const lastName = person.lastName;
+const age = person.age;
+const hobbies = person.hobbies;
 
-// filter
-const ages = [19, 20, 21, 22, 23];
 
-const evenAges = ages.filter(
-  function (age) {
-    return age % 2 === 0; // cálculo para verificar se é par
+
+// Desafio 01, acessar segundo valor da lista
+//console.log(hobbies[1]);
+
+// solução apresentada
+const study = person.hobbies[1];
+//console.log(study);
+// Desestruturação
+
+/* 
+const { firstName, lastName, age, hobbies, dogM } = person;
+// renomear propriedade
+//const { firstName: primeiroNome, lastName, age, hobbies } = person;
+
+console.log(firstName + ' ' +  lastName);
+console.log(age);
+console.log(hobbies);
+
+// adicionar propriedades no objeto
+person.bird = 'Ayla';
+
+console.log(dogM); 
+*/
+
+// lista com vários objetos 
+
+const todo = [
+  {
+    id: 1,
+    description: 'Estudar',
+    isComplete: true
+  }, 
+  {
+    id: 2,
+    description: 'Assistir anime',
+    isComplete: true
+  }, 
+  {
+    id: 3,
+    description: 'Ignite',
+    isComplete: false
   }
-);
+];
 
-console.log(evenAges);
-
-// reduce  
-const sumOfAges = ages.reduce(
-  function (age, accumulator) { // accumulator é uma convenção
-     return accumulator + age; 
-  }, 0 // accumulator iniciou em 0 (pode ser qualquer valor), ele é o valor inicial
-);
-
-console.log(sumOfAges);
+// Desafio 02 - acessar o último objeto
+const secondDescription = todo[1];
+console.log(secondDescription.description);
