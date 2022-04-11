@@ -21,3 +21,22 @@
 - [ ] Manipular elementos do DOM
 - [ ] Eventos
 - [ ] Criar e manipular eventos
+
+## Aulas
+
+1. Introdução
+2. Variáveis e Tipos de Dados
+3. Listas
+4. Map, Filter, Reduce
+5. Objetos
+6. JSON
+7. Loops
+8. Condicionais
+9. Conceito Truthy e Falsy
+10. Funções e Arrow Functions
+11. Programação Orientada a Objetos
+12. Selecionando Elementos da DOM
+13. Manipulando Elementos da DOM
+14. Eventos
+15. Criando e Validando um Formulário
+16. Conclusão
