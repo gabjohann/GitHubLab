@@ -10,7 +10,7 @@
 ## Conteúdos do curso
 
 - [X] Variáveis e tipos de dados
-- [ ] Listas
+- [X] Listas
 - [ ] Objetos
 - [ ] JSON
 - [ ] Loops

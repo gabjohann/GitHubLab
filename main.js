@@ -1,45 +1,32 @@
-// const names = ['Lucas', 'Gabriel', 'Anakin'];
-const names = ['Lucas', 'Gabriel', 'Anakin', 10];
+// Manipulação de listas
 
-// acessar elementos da lista
-const gabriel = names[1]; 
-console.log(gabriel);
+const numbers = [1, 2, 3, 4, 5];
 
-// adicionar elementos ao final da lista
-names.push('Baelfire'); 
-console.log(names);
+// map
+const numberMultipliedByTwo = numbers.map(
+  function (number) {
+    return number * 2;
+  }
+);
 
-// adicionar elementos ao inicio da lista
-names.unshift(20); 
-console.log(names);
+console.log(numberMultipliedByTwo);
 
-// remove o primeiro elemento da lista
-names.shift(20); 
-console.log(names);
+// filter
+const ages = [19, 20, 21, 22, 23];
 
-// remove o último elemento adicionado a lista
-names.pop(); 
-console.log(names);
+const evenAges = ages.filter(
+  function (age) {
+    return age % 2 === 0; // cálculo para verificar se é par
+  }
+);
 
-// alterar o valor de um elemento
-names[3] = 'Baelfire'; 
-console.log(names);
+console.log(evenAges);
 
-// verifica o índice de um elemento
-console.log(names.indexOf('Gabriel')); 
+// reduce  
+const sumOfAges = ages.reduce(
+  function (age, accumulator) { // accumulator é uma convenção
+     return accumulator + age; 
+  }, 0 // accumulator iniciou em 0 (pode ser qualquer valor), ele é o valor inicial
+);
 
-// ordena em ordem alfabética
-const sortedNames = names.sort();
-console.log(sortedNames);
-
-//console.log(names.sort()); 
-
-// verifica a quantidade de elementos
-console.log(names.length);
-
-
-// verifica se uma variável é uma lista 
-const nameISArray = Array.isArray(names);
-console.log(nameISArray);
-
-//console.log(Array.isArray(names)); 
+console.log(sumOfAges);
