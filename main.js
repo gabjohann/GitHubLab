@@ -1,57 +1,71 @@
-// Loops
+// Condicionais
 
-// index inicia com valor 0 e é somado 1 enquanto o index for menor que 10
-for (let i = 0; i < 10; i++) {
-  console.log(i);
+
+// == verifica o valor
+// === verifica o tipo
+const sum = 1 + 1;
+
+// if e else
+if( sum === 2) { 
+  console.log('Sum is 2!');
+} else {
+  console.log('Sum is not 2!');
 }
 
-const series = [
-  'Once Upon a Time', 
-  'Station 19', 
-  'Orange is The New Black', 
-  'Atypical'
-];
 
+// else  if 
+const number = 10;
 
-//for
-for (let i = 0; i < series.length; i++) {
-  console.log(series[i]);
-}  // se fosse somente console.log(series) iria retornar uma lista
-
-
-// for of
-for (let serie of series) {
-  console.log(serie);
-}
- 
-
-// for each
-series.forEach(function (serie) {
-  console.log(serie);
-});
-
-// for each permite ver o index
-series.forEach(function (serie, index) {
-  console.log(index + ' -> '+ serie);
-});
-
-
-// while 
-
-let index = 0;
-
-while (index < 10) {
-  console.log('index é menor do que 10');
-  index++; // index += 1 || index = index + 1;
+if (number === 2) {
+  console.log('Number is 2!');
+} else if (number === 3) {
+  console.log('Number is 3!');
+} else {
+  console.log('Number unknown!');
 }
 
-// for in -> utilizado em objetos
+// && || 
+const sum1 = 2 + 2;
+const sum2 = 3 + 3; 
 
-const person = {
-  name: 'Lucas',
-  age: 19
+if (sum1 === 4 && sum2 === 6) {
+  console.log('Sum1 is 4 and Sum2 is 6!');
 }
 
-for (property in person) {
-  console.log(person[property]);
+if (sum1 === 4 || sum2 === 2) {
+  console.log('Sum1 is 4 or Sum2 is 6!');
+}
+
+let num; 
+let divider = 10 / 2;
+
+if (divider === 5) {
+  num = 5;
+} else {
+  num = 4;
+}
+
+console.log(num);
+
+// operadores ternários
+const pi = 3.14
+let result = pi === 3.14 ? 3.14 : 314;
+
+console.log(result);
+
+
+// switch case 
+
+const serie = 'Once Upon a Time'; 
+
+switch (serie) {
+  case 'Once upon a Time':
+    console.log('My favorite serie!');
+    break;
+  case 'Orange is The New Black':
+    console.log('A good serie!');
+    break; 
+  case 'Station 19':
+    console.log('I am exciting for the next season!');
+    break;
 }
