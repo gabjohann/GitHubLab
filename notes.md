@@ -9,3 +9,7 @@ Instalação do styled-components: `yarn add styled-components`
 REST API sem construir Back-end
 - JSON Server
 - Mirage JS
+
+## Instalação Mirage JS
+
+`yarn add miragejs`
