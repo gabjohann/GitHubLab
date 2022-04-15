@@ -1,71 +1,40 @@
-// Condicionais
+// Conceito de Truthy & Falsy
 
 
-// == verifica o valor
-// === verifica o tipo
-const sum = 1 + 1;
+// Falsy
+const x = ''; 
 
-// if e else
-if( sum === 2) { 
-  console.log('Sum is 2!');
-} else {
-  console.log('Sum is not 2!');
+console.log(!!x); // !! verifica se é verdadeiro ou falso
+
+// uma string vazia é sempre falsa
+if (x) {
+  console.log(x); 
 }
 
+// 0 é sempre falso
+const y = 0;
+console.log(!!y); 
 
-// else  if 
-const number = 10;
+// valores nulos é sempre falso
+const a = null;
+console.log(!!a);
 
-if (number === 2) {
-  console.log('Number is 2!');
-} else if (number === 3) {
-  console.log('Number is 3!');
-} else {
-  console.log('Number unknown!');
-}
+// valores indefinidos é sempre falso
+const b = undefined;
+console.log(!!b);
 
-// && || 
-const sum1 = 2 + 2;
-const sum2 = 3 + 3; 
+//Truthy
 
-if (sum1 === 4 && sum2 === 6) {
-  console.log('Sum1 is 4 and Sum2 is 6!');
-}
+// uma lista vazia é sempre verdadeira
+const list  = [];
+console.log(!![]);
 
-if (sum1 === 4 || sum2 === 2) {
-  console.log('Sum1 is 4 or Sum2 is 6!');
-}
+// um objeto vazio é sempre verdadeiro
+const object = {};
+console.log(!!object);
 
-let num; 
-let divider = 10 / 2;
-
-if (divider === 5) {
-  num = 5;
-} else {
-  num = 4;
-}
-
-console.log(num);
-
-// operadores ternários
-const pi = 3.14
-let result = pi === 3.14 ? 3.14 : 314;
-
-console.log(result);
-
-
-// switch case 
-
-const serie = 'Once Upon a Time'; 
-
-switch (serie) {
-  case 'Once upon a Time':
-    console.log('My favorite serie!');
-    break;
-  case 'Orange is The New Black':
-    console.log('A good serie!');
-    break; 
-  case 'Station 19':
-    console.log('I am exciting for the next season!');
-    break;
-}
+// negação
+console.log(!list); // virou false
+console.log(!object); // virou false
+console.log(!a); // virou true
+console.log(!b); // virou true
