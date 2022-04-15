@@ -1,40 +1,35 @@
-// Conceito de Truthy & Falsy
+// Funções e Arrow Functions
 
-
-// Falsy
-const x = ''; 
-
-console.log(!!x); // !! verifica se é verdadeiro ou falso
-
-// uma string vazia é sempre falsa
-if (x) {
-  console.log(x); 
+function sum(a, b) {
+  console.log(a + b);
 }
 
-// 0 é sempre falso
-const y = 0;
-console.log(!!y); 
+sum(2, 2);
 
-// valores nulos é sempre falso
-const a = null;
-console.log(!!a);
+function div(x, y) {
+  return x / y;
+}
 
-// valores indefinidos é sempre falso
-const b = undefined;
-console.log(!!b);
+const divValue = div(10, 2);
+console.log(divValue);
 
-//Truthy
+// valores padrões para parâmetros
+function sub(c, d = 2) {
+  return c - d;
+}
+const subValue = sub(4);
+console.log(subValue);
 
-// uma lista vazia é sempre verdadeira
-const list  = [];
-console.log(!![]);
 
-// um objeto vazio é sempre verdadeiro
-const object = {};
-console.log(!!object);
+// Arrow Functions 
 
-// negação
-console.log(!list); // virou false
-console.log(!object); // virou false
-console.log(!a); // virou true
-console.log(!b); // virou true
+const sumArrow = (j, z) => {
+  return j + z;
+}
+const sumValue2 = sumArrow(2, 2);
+console.log(sumValue2);
+
+/* 
+* MESMA FORMA QUE ACIMA
+const sumArrow = (j, z) => j + z;
+*/
