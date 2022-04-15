@@ -1,35 +1,56 @@
-// Funções e Arrow Functions
+// Programação Orientada a Objetos (POO)
 
-function sum(a, b) {
-  console.log(a + b);
+class Person {
+  constructor(firstName, lastName, age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+  }
+
+  //método
+  getFullName() {
+    console.log(`${this.firstName} ${this.lastName}`);
+  }
+
+  //métodos estáticos
+  static speak() {
+    console.log('Hello JavaScript');
+  }
 }
 
-sum(2, 2);
+const person = new Person('Lucas', 'Johann', 19);
+console.log(person);
+person.getFullName();
 
-function div(x, y) {
-  return x / y;
+Person.speak();
+
+const person2 = new Person('Gabriel', 'Johann', 20);
+console.log(person2);
+
+
+// heranças
+class Cartoon {
+  constructor(name) {
+    this.name = name;
+  }
+
+  characters() {
+    console.log(`${this.name} is an cartoon character.`);
+  }
 }
 
-const divValue = div(10, 2);
-console.log(divValue);
+class Anime extends Cartoon {
+  constructor(name) {
+    super(name); // chama o constructor da classe anterior
+  }
 
-// valores padrões para parâmetros
-function sub(c, d = 2) {
-  return c - d;
+  characters() {
+    console.log(`${this.name} is an cartoon.`); // sobrescreve
+  }
 }
-const subValue = sub(4);
-console.log(subValue);
 
+const cartoon = new Cartoon('Nezuko');
+cartoon.characters();
 
-// Arrow Functions 
-
-const sumArrow = (j, z) => {
-  return j + z;
-}
-const sumValue2 = sumArrow(2, 2);
-console.log(sumValue2);
-
-/* 
-* MESMA FORMA QUE ACIMA
-const sumArrow = (j, z) => j + z;
-*/
+const anime = new Anime('Demon Slayer');
+anime.characters();
