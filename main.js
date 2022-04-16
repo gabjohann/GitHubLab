@@ -1,56 +1,12 @@
-// Programação Orientada a Objetos (POO)
+// Selecionar Elementos da DOM 
 
-class Person {
-  constructor(firstName, lastName, age) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-  }
-
-  //método
-  getFullName() {
-    console.log(`${this.firstName} ${this.lastName}`);
-  }
-
-  //métodos estáticos
-  static speak() {
-    console.log('Hello JavaScript');
-  }
-}
-
-const person = new Person('Lucas', 'Johann', 19);
-console.log(person);
-person.getFullName();
-
-Person.speak();
-
-const person2 = new Person('Gabriel', 'Johann', 20);
-console.log(person2);
+/*
+const addUserText = document.getElementById('add-user');
+console.log(addUserText); // retorna ao que esta atrelado este ID
 
 
-// heranças
-class Cartoon {
-  constructor(name) {
-    this.name = name;
-  }
+addUserText.innerText = 'Adicionar usuário'; // troca o dado de H1
 
-  characters() {
-    console.log(`${this.name} is an cartoon character.`);
-  }
-}
-
-class Anime extends Cartoon {
-  constructor(name) {
-    super(name); // chama o constructor da classe anterior
-  }
-
-  characters() {
-    console.log(`${this.name} is an cartoon.`); // sobrescreve
-  }
-}
-
-const cartoon = new Cartoon('Nezuko');
-cartoon.characters();
-
-const anime = new Anime('Demon Slayer');
-anime.characters();
+*/
+const addUserText = document.querySelector('#add-user'); // # significa que é um ID
+console.log(addUserText); // retorna ao que est
