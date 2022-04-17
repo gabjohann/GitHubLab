@@ -11,12 +11,12 @@
 
 - [X] Variáveis e tipos de dados
 - [X] Listas
-- [ ] Objetos
-- [ ] JSON
-- [ ] Loops
-- [ ] Condicionais
-- [ ] Funções e Arrow Functions
-- [ ] Programação orientada a objetos
+- [x] Objetos
+- [x] JSON
+- [x] Loops
+- [x] Condicionais
+- [x] Funções e Arrow Functions
+- [x] Programação orientada a objetos
 - [ ] Selecionar elementos do DOM 
 - [ ] Manipular elementos do DOM
 - [ ] Eventos
