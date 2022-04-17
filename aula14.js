@@ -1,12 +1,9 @@
 // Criando e Validando Formulários
-
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
-
-const placeholderName = document.getElementById("name");
-const placeholderEmail = document.getElementById("email");
-
 const submitButton = document.querySelector('#submit-button');
+
+const errorMessage = document.querySelector('.msg');
 
 const items = document.querySelector('.items');
 
@@ -17,9 +14,14 @@ submitButton.addEventListener('click', (event) => {
   const emailValue = emailInput.value;
 
   if (nameValue === '' || emailValue === '') {
-    placeholderName.placeholder = 'Name required';
-    placeholderEmail.placeholder = 'Email required';
-    
+    errorMessage.textContent = 'Please fill out the fields!';
+    errorMessage.classList = 'error';
+
+    setTimeout(() => {
+      errorMessage.textContent = ''; 
+      errorMessage.classList = '';
+    }, 3000);
+
     return;
   }
 
@@ -35,12 +37,6 @@ submitButton.addEventListener('click', (event) => {
   items.appendChild(liName);  
   items.appendChild(liEmail);
 
-
   nameInput.value = '';
   emailInput.value = '';
-  placeholderName.value = '';
-
-  setTimeout(() => {
-    items.remove();  
-  }, 3000);
 });

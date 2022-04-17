@@ -7,7 +7,11 @@
 body {
   font-family: "Archivo", Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background: #262626;
+  background: #F0F2F5;
+  display: flex;
+  flex-direction: line;
+  align-self: center;
+  justify-content: space-around;
 }
 
 ul {
@@ -16,32 +20,46 @@ ul {
 
 ul li {
   padding: 5px;
-  background: #f4f4f4;
-  margin: 5px 0;
+  background: #FFFF;
+  color: #262626;
+  margin: 5px 2px;
+  box-shadow: rgba(0, 0, 0, 0.20) 2px 4px 2px
 }
 
-header {
-  background: #111;
-  color: #eee;
-  padding: 1rem;
-  text-align: center;
+ul li:first-child {
+  margin-top: 25px;
 }
 
 .container {
-  margin: auto;
+  margin: 2rem 10rem;
   width: 500px;
   overflow: auto;
   padding: 3rem 2rem;
 }
 
+#add-user {
+  color: #F4F4F4;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  color: #494848;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
 #my-form {
-  padding: 2rem;
-  background: #f4f4f4;
+  padding: 2rem 2rem 1rem;
+  background: #836FFF;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px;
 }
 
 #my-form label {
   display: block;
+  margin-bottom: 0.5rem;
 }
 
 #my-form input[type="text"] {
@@ -52,15 +70,19 @@ header {
   border: 1px solid #ccc;
 }
 
+input::placeholder {
+  color: #E52E4D;
+}
+
 .btn {
-  display: block;
-  width: 100%;
-  padding: 10px 15px;
+  width: 50%;
+  padding: 10px 12px;
   border: 0;
-  background: #262626;
+  background: #262626ce;
   color: #fff;
+  font-size: 1rem;
   border-radius: 5px;
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
 .btn:hover {
@@ -73,8 +95,19 @@ header {
 }
 
 .error {
-  background: orangered;
+  background: rgb(231, 151, 121);
   color: #fff;
   padding: 5px;
   margin: 5px;
+  font-weight: bold;
+  height: auto;
+  width: 12.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.image {
+  width: 30%;
+  margin-top: 8rem;
+  margin-right: 8rem;
 }
