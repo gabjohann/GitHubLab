@@ -17,10 +17,10 @@
 - [x] Condicionais
 - [x] Funções e Arrow Functions
 - [x] Programação orientada a objetos
-- [ ] Selecionar elementos do DOM 
-- [ ] Manipular elementos do DOM
-- [ ] Eventos
-- [ ] Criar e manipular eventos
+- [x] Selecionar elementos do DOM 
+- [x] Manipular elementos do DOM
+- [x] Eventos
+- [x] Criar e manipular eventos
 
 ## Aulas
 

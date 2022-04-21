@@ -2,7 +2,7 @@
 
 const numbers = [1, 2, 3, 4, 5];
 
-// map
+// map -> percorre o array e cria um novo array com o resultado da função
 const numberMultipliedByTwo = numbers.map(
   function (number) {
     return number * 2;
@@ -11,7 +11,7 @@ const numberMultipliedByTwo = numbers.map(
 
 console.log(numberMultipliedByTwo);
 
-// filter
+// filter -> filtra o array e cria um novo array com o resultado da função
 const ages = [19, 20, 21, 22, 23];
 
 const evenAges = ages.filter(
@@ -22,7 +22,8 @@ const evenAges = ages.filter(
 
 console.log(evenAges);
 
-// reduce  
+
+// reduce -> percorre o array e retorna o resultado da função em um único valor
 const sumOfAges = ages.reduce(
   function (age, accumulator) { // accumulator é uma convenção
      return accumulator + age; 
