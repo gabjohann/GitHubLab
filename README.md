@@ -25,3 +25,11 @@ As linguagens que estarão aqui neste repositório irão de acordo com meus obje
 ## 🎯 Objetivos
 
 O GitHub Lab tem por objetivo o agrupamento das informações, por estar em um repositório remoto traz a praticidade de acessar a qualquer momento (além de segurança) e também permite que outras pessoas acessem este mesmo conteúdo, ou seja, é destinado tanto para eventuais consultas como um modo seguro de arquivamento quanto para contribuir com o estudo de outrem.
+
+
+## Conteúdos
+
+### Básico de JavaScript
+📂  [pasta do repositório](https://github.com/gabjohann/GithubLab/tree/main/javascript) 
+
+📚 [material base](https://www.youtube.com/playlist?list=PLm-VCNNTu3LnlPhqxx03kvjQd3qF6EBdz)
