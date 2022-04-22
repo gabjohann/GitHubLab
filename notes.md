@@ -19,3 +19,7 @@ REST API sem construir Back-end
 `yarn add react-modal`
 
 `yarn add @types/react-modal -D` // em caso de erro
+
+## Instalação da biblioteca de manipulação de cores com JS
+
+`yarn add polished`
