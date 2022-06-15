@@ -23,7 +23,7 @@ createServer({
           id: 2, 
           title: 'internet',
           type: 'withdraw',
-          category: 'casa',
+          category: 'home',
           amount: 110,
           createdAt: new Date('2020-04-02 10:20:00'),
         }
